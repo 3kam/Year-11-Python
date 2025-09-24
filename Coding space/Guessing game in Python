@@ -1,7 +1,7 @@
 import random
 
 def number_guessing_game():
-    # Generate a random number between 1 and 1000
+    # Generates a random number between 1 and 1000
     hidden_number = random.randint(1, 1000)
     attempts = 0
     max_attempts = 10
@@ -10,11 +10,10 @@ def number_guessing_game():
 
     while attempts < max_attempts:
         try:
-            # Prompt user for their guess
             guess_number = int(input("Enter your guess: "))
             attempts += 1
 
-            # Provide feedback based on the guess
+            # Give feedback on the guess
             if guess_number < hidden_number:
                 print("Too low, try a higher number.")
             elif guess_number > hidden_number:
@@ -24,10 +23,10 @@ def number_guessing_game():
                 break  # Exit loop if guessed correctly
 
         except ValueError:
-            # Handle non-integer input
+            # Handle only for integar input
             print("Invalid input. Please enter a whole number.")
 
-    # If the user runs out of attempts
+    # Message to user who runs out of attempts
     if attempts == max_attempts and guess_number != hidden_number:
         print(f"Bad luck! You’ve used all {max_attempts} attempts. The hidden number was {hidden_number}.")
 
