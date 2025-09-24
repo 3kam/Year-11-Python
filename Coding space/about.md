@@ -13,3 +13,4 @@ Welcome to the **Number Guessing Game**, this is a simple game made from Python 
    - `"Too high, try a lower number."`
    - `"You guessed the hidden number in x attempts. Well done!"`
 6. If you fail the 10 attempts on guessing, you'll loose and the game would reveal the correct answer.
+	![alt text](image.jpg)
