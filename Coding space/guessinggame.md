@@ -1,4 +1,3 @@
-| Syntax | Description |
-| ----------- | ----------- |
-| Header | Title |
-| Paragraph | Text |
+# H1
+## H2
+### H3
